@@ -1,0 +1,18 @@
+{
+  "name": "backend",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify",
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "emailjs": "^5.0.0",
+    "hono": "^4.12.12"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.2",
+    "wrangler": "^4.81.1"
+  }
+}

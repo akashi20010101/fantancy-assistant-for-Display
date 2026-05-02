@@ -1,0 +1,38 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "fantacy-assistant",
+	"main": "src/index.ts",
+	"compatibility_date": "2026-04-10",
+	"vars": {
+		// 在这里添加你的 JWT 密钥
+		"JWT_SECRET": "ahfsoihfasihfajfqw",
+		"PASSWORD_SALT": "fasffasfasfaadsfvc",
+		"MY_EMAIL": "test@gmail.com",
+		"EMAIL_API_KEY": "test_api_key",
+		"GOOGLE_GENERATIVE_AI_API_KEY": "test_google_api_key",
+		"GLM_API_KEY": "testafafafa"
+	},
+	"observability": {
+		"enabled": true
+	},
+	"upload_source_maps": true,
+	"compatibility_flags": [
+		"nodejs_compat"
+	],
+	"d1_databases": [
+		{
+			"binding": "fantacy_db",
+			"database_name": "fantacy_db",
+			"database_id": "281ac839-8cf4-42dc-8d23-4edea342bc22"
+		}
+	],
+	"ai": {
+		"binding": "AI"
+	},
+	"vectorize": [
+		{
+			"binding": "VECTOR_INDEX",
+			"index_name": "fantacy_index"
+		}
+	]
+}
